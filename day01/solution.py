@@ -12,9 +12,8 @@ def check_sum(some_list, magic_number=magic_number):
         print("Their product is: ", product)
 
 
-with open("../inputs/day01.txt") as f:
+with open("./input.txt") as f:
     items = f.read().splitlines()
-    cool_pairs = []
     # combinations(range(4), 3) --> 012 013 023 123
     # Part 1
     for a, b in itertools.combinations(items, 2):
